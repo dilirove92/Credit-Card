@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    
+	<title>CreditCard|Datos de Cliente</title>
+    <meta charset="utf-8">
+    
+	<link rel="stylesheet" type="text/css" media="screen" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Muli:400,300,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Passion+One:400,700' rel='stylesheet' type='text/css'>
+    
+	<style type="text/css">
+    .cuadro1 {
+		border-color: #333;
+	}
+    </style>
+
+	<script language="javascript" type="text/javascript" src="ValidacionesJavaScript.js"></script>
+	
+</head>
+
+<body>
+
+<div class="bg">
+	<div class="bg-2">
+
+		<!--==============================header=================================-->
+		<header>
+			<h1><img src="images/logoCC.png" alt=""></h1>
+			<nav>  
+				<ul class="menu">               
+					<li><a href="DatosCliente.html">Datos de Cliente</a></li>
+					<li><a href="DatosFactura.html">Datos de Factura</a></li>
+					<li><a href="Pagos.html">Pagos</a></li>
+					<li><a href="Reportes.html">Reportes</a></li>
+				</ul>
+			</nav>
+		</header>
+		
+		<!--==============================content================================-->
+		<section id="content"><div class="ic"></div>
+		
+			<div class="slogan top-1">
+				<h3><span class="clr-1"></span>Bienvenid@:<span class="text-4">Elayne Sánchez</span></h3>       	
+				<a href="Inicio.html" class="button-2">Cerrar Sesión</a>
+			</div>      
+		
+			<fieldset>
+				<div class="wrap page2-row1">
+					<div class="page2-col-1 border-right">
+					<h2><span class="clr-1" style="text-align:left">C</span>liente</span></h2>
+					<p>&nbsp;</p>                
+					<form> 
+			
+						<table width="654" border = "0" align= "center">	
+							
+							<tr>
+							<td width="247" height="28" align="center" valign="middle" nowrap><p align="right"><strong>Cédula de Identidad/RUC:</strong></p></td> <td width="351" height="28" align="left" valign="middle" nowrap><p>
+							  <input name="txtCiRuc" type="text" id="txtCiRuc" value="" height="25" size="43" maxlength="11" onkeypress="return ValidarCaracteres(event, 'num_guion')">
+								</p></td>
+							<td width="42"><p>
+							  <input type="image" src="images/Find1.png" width="35" height="26">
+							  </p></td>	
+							</tr>
+							
+							<tr align="center" valign="middle">
+							<td height="28" align="center" valign="middle" nowrap><p align="right"><strong>Apellidos y Nombres: </strong></p></td> <td height="28" align="left" valign="middle" nowrap><p>
+								<input name="txtNombres" type="text" id="txtNombres" height="25"  size="43"  value="" onkeypress="return ValidarCaracteres(event, 'car')">
+								</p></td> 
+							</tr>	
+							
+							<tr align="center" valign="middle">
+							<td height="28" align="center" valign="middle" nowrap><p align="right"><strong>Dirección: </strong></p></td> <td height="28" align="left" valign="middle" nowrap><p>
+								<input name="txtDireccion" type="text" id="txtDireccion" height="25"  size="43"  value="" onkeypress="return ValidarCaracteres(event, 'num_car')">
+							  </p></td> 
+							</tr>
+							
+							<tr align="center" valign="middle">
+							<td height="28" align="center" valign="middle" nowrap><p align="right"><strong>Teléfono: </strong></p></td> <td height="28" align="left" valign="middle" nowrap><p>
+							  <input name="txtTelefono" type="text" id="txtTelefono" height="25"  size="43"  value="" onkeypress="return ValidarCaracteres(event, 'num')">
+								</p></td> 
+							</tr>
+							
+							<tr align="center" valign="middle">
+							<td height="28" align="center" valign="middle" nowrap><p align="right"><strong>Correo Eléctronico: </strong></p></td> <td height="28" align="left" valign="middle" nowrap><p>
+							  <input type="email" name="txtEmail" id="txtEmail" height="25"  size="43"  value="" onkeypress="return ValidarCaracteres(event, 'ema')">
+							</p></td> 
+							</tr>	
+							
+						</table> 
+						
+					</form>                 
+				</div> 
+				
+				<div class="page2-col-3">              
+					<p>&nbsp;</p>
+					<p>&nbsp;</p>
+					<p>&nbsp;</p>
+					<a href="#" class="button-2">Ingresar</a>           
+					<p>&nbsp;</p>
+					<a href="#" class="button-2">Modificar</a>
+					<p>&nbsp;</p>
+					<a href="#" class="button-2">Eliminar</a>
+					<p>&nbsp;</p>                
+				</div> 
+				 
+				<div class="page2-col-1 border-right">
+					<h2><span class="clr-1">C</span>rédito</h2>
+					<p>&nbsp;</p>
+					<form>
+						<table width="639" border = "0" align= "center">	
+							
+							<tr>
+							<td width="247" height="28" align="center" valign="middle" nowrap><p align="right"><strong>Deuda:</strong></p></td> <td width="351" height="28" align="left" valign="middle" nowrap><p>
+							  <input name="txtDeuda" type="text" id="txtDeuda" value="" height="25" size="43" maxlength="11" onkeypress="return ValidarCaracteres(event, 'dec')">
+								</p></td>
+							<td width="27">&nbsp;</td>	
+							</tr>
+							
+							<tr align="center" valign="middle">
+							<td height="28" align="center" valign="middle" nowrap><p align="right"><strong>Valor Máximo: </strong></p></td> <td height="28" align="left" valign="middle" nowrap><p>
+								<input name="txtValorMaximo" type="text" id="txtValorMaximo" height="25"  size="43"  value="" onkeypress="return ValidarCaracteres(event, 'dec')">
+								</p></td> 
+							</tr>            
+						
+						</table>
+						<p>&nbsp;</p>                          
+					</form>                 
+				</div>
+				</div>
+			</fieldset>
+		</section> 
+		
+	</div>       
+</div> 
+
+</body>
+
+</html>
